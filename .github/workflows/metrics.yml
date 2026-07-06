@@ -2,7 +2,7 @@ name: Update profile metrics
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           output_action: commit
           committer_branch: main
-          committer_message: 'chore: update metrics'
+          committer_message: "chore: update metrics"
           config_output: assets/metrics.svg
           plugin_isocalendar: yes
           plugin_languages: yes
