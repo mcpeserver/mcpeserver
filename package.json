@@ -1,9 +1,0 @@
-{
-  "name": "mcpeserver",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "build-readme": "node .github/scripts/build-readme.js"
-  },
-  "dependencies": {}
-}
