@@ -1,85 +1,58 @@
-# 👋 Hi, I'm **MCPEServer**
+# 👋 MCPEServer — Dynamic README Generator
 
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=220&text=MCPEServer&fontAlign=50&fontAlignY=38&color=0:0ea5e9,100:1e3a8a&fontColor=ffffff" />
-</p>
-
-<p align="center">
-Building modern Minecraft Bedrock projects, web applications, and open-source software.
-</p>
-
-<p align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&weight=600&size=22&pause=1000&center=true&vCenter=true&width=700&lines=Minecraft+Bedrock+Developer;Open+Source+Maintainer;Modern+Web+Developer;Always+Learning+Something+New" />
-</p>
+This repository now includes a scaffold to build a dynamic README automatically from several data sources and templates. The scaffold we added contains GitHub Actions workflows, helper scripts, Handlebars templates, cached API data, and generated metrics.
 
 ---
 
-# 🚀 About
+**What's included (scaffold):**
 
-Welcome to my GitHub profile.
-
-I enjoy building modern, responsive, and scalable projects focused on:
-
-- 🎮 Minecraft Bedrock
-- 🌐 Web Development
-- ⚙️ Backend Systems
-- 📦 Open Source
-- 🎨 UI / UX
-
----
-
-# 📊 GitHub Dashboard
-
-> Replace `mcpeserver` if your username changes.
-
-![Stats](https://github-readme-stats.vercel.app/api?username=mcpeserver&show_icons=true&theme=tokyonight&hide_border=true)
-
-![Streak](https://streak-stats.demolab.com?user=mcpeserver&theme=tokyonight&hide_border=true)
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=mcpeserver&layout=compact&theme=tokyonight&hide_border=true)
-
-![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=mcpeserver&theme=tokyo-night)
+- `/.github/workflows/` — scheduled workflows that run the builder and fetchers.
+- `/.github/scripts/` — Node.js scripts (placeholders) used by workflows: `build-readme.js`, `fetch-wakatime.js`, `fetch-spotify.js`, `fetch-devto.js`, `fetch-chess.js`, `fetch-steam.js`, `generate-metrics.js`, `generate-3d-contrib.js`, `comment-handler.js`, `animation-generator.js`.
+- `/.github/templates/` — Handlebars templates and partials used to render the README.
+- `/data/` — static JSON used by templates (config, skills, projects, social, achievements, memes, quotes).
+- `/api/` — cached API responses (`wakatime.json`, `spotify.json`, `blog-posts.json`, `chess-stats.json`, `steam-games.json`).
+- `/metrics/` — generated SVG metrics (examples provided as placeholders).
+- `package.json` — simple NPM script: `npm run build-readme`.
+- `.env.example` — environment variables to configure API keys.
 
 ---
 
-# 🛠 Tech Stack
+**Quick usage (local):**
 
-![My Skills](https://skillicons.dev/icons?i=html,css,js,ts,nodejs,php,react,vue,tailwind,mysql,mongodb,docker,linux,git,github,vscode)
+1. Install dependencies:
 
----
+```bash
+npm ci
+```
 
-# 🎯 Current Focus
+2. Run the README builder (placeholder script):
 
-- Minecraft Bedrock Ecosystem
-- Hosting Platform
-- Developer Tools
-- Modern UI
-- Open Source
+```bash
+npm run build-readme
+```
 
----
-
-# 🏆 Achievements
-
-![Trophies](https://github-profile-trophy.vercel.app/?username=mcpeserver&theme=tokyonight&no-frame=true&margin-w=10)
+The current `build-readme.js` is a placeholder that should load data from `/data/` and `/api/`, render `/.github/templates/main.hbs` with partials, and write the final `README.md`.
 
 ---
 
-# 🐍 Contribution Snake
+**How the workflows run:**
 
-Create `.github/workflows/snake.yml` to generate the snake animation automatically.
+- `main-readme.yml` — builds the README on a schedule (every 30 minutes) and on manual dispatch.
+- `wakatime-sync.yml`, `spotify-sync.yml`, `blog-fetcher.yml`, `chess-game.yml`, `metrics-generator.yml` — periodic fetchers and metric generators.
+- `comment-automation.yml` — listens for comments to run `comment-handler.js`.
 
----
-
-# ❤️ Open Source
-
-If any of my projects help you, consider leaving a ⭐ on the repository.
+All workflows execute the Node scripts in `/.github/scripts/` and update files in `/api/` or `/metrics/` as needed.
 
 ---
 
-<p align="center">
-Thanks for visiting 💙
-</p>
+**Next steps I can do for you:**
 
-<p align="center">
-<img src="https://capsule-render.vercel.app/api?type=waving&section=footer&height=140&color=0:1e3a8a,100:0ea5e9"/>
-</p>
+- Implement `build-readme.js` to perform actual Handlebars rendering and write `README.md`.
+- Replace script placeholders with real API integrations and caching logic.
+- Improve templates and partials with final markup and styles.
+
+Which of these shall I implement first?
+
+---
+
+_Updated to reflect new scaffold created on 2026-07-07._
