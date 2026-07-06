@@ -1,10 +1,14 @@
-<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="220" rx="24" fill="#0F172A"/>
-  <rect x="24" y="24" width="852" height="172" rx="16" fill="#111827" stroke="#334155"/>
-  <text x="48" y="64" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Contribution Snake</text>
-  <path d="M110 150H190V112H250V150H330V90H410V150H490V126H570V150H650V102H730V150H790" stroke="#34D399" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="190" cy="150" r="10" fill="#F59E0B"/>
-  <circle cx="250" cy="112" r="10" fill="#38BDF8"/>
-  <circle cx="410" cy="90" r="10" fill="#A78BFA"/>
-  <circle cx="650" cy="102" r="10" fill="#F472B6"/>
+<svg width="900" height="120" viewBox="0 0 900 120" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Placeholder ini akan DIGANTI OTOMATIS oleh workflow
+    .github/workflows/snake.yml setelah Action pertama kali berjalan
+    (lihat job "generate-snake"). Tidak perlu diedit manual.
+  -->
+  <rect width="900" height="120" fill="#0f2027" rx="8"/>
+  <text x="450" y="55" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#4ee2b8">
+    🐍 Snake contribution akan muncul di sini
+  </text>
+  <text x="450" y="80" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8fd9c9" opacity="0.8">
+    Aktifkan workflow "Generate Snake" di tab Actions untuk membuatnya
+  </text>
 </svg>

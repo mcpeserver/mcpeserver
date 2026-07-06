@@ -1,18 +1,14 @@
-<svg width="900" height="260" viewBox="0 0 900 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="260" rx="24" fill="#0F172A"/>
-  <rect x="24" y="24" width="852" height="212" rx="16" fill="#111827" stroke="#334155"/>
-  <text x="48" y="64" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">GitHub Metrics</text>
-  <text x="48" y="92" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="16">Contribution • Languages • Stars • Repositories</text>
-  <rect x="48" y="122" width="120" height="78" rx="12" fill="#1E293B"/>
-  <text x="72" y="154" fill="#38BDF8" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">128</text>
-  <text x="64" y="178" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14">Commits</text>
-  <rect x="190" y="122" width="120" height="78" rx="12" fill="#1E293B"/>
-  <text x="228" y="154" fill="#A78BFA" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">18</text>
-  <text x="225" y="178" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14">Repos</text>
-  <rect x="332" y="122" width="120" height="78" rx="12" fill="#1E293B"/>
-  <text x="370" y="154" fill="#F59E0B" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">54</text>
-  <text x="366" y="178" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14">Stars</text>
-  <rect x="474" y="122" width="120" height="78" rx="12" fill="#1E293B"/>
-  <text x="509" y="154" fill="#34D399" font-family="Segoe UI, Arial, sans-serif" font-size="30" font-weight="700">9</text>
-  <text x="498" y="178" fill="#CBD5E1" font-family="Segoe UI, Arial, sans-serif" font-size="14">Projects</text>
+<svg width="900" height="500" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Placeholder ini akan DIGANTI OTOMATIS oleh workflow
+    .github/workflows/metrics.yml setelah Action pertama kali berjalan.
+    Tidak perlu diedit manual.
+  -->
+  <rect width="900" height="500" fill="#0f2027" rx="8"/>
+  <text x="450" y="240" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#4ee2b8">
+    📊 Metrics dashboard akan muncul di sini
+  </text>
+  <text x="450" y="265" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8fd9c9" opacity="0.8">
+    Aktifkan workflow "Metrics" di tab Actions untuk membuatnya
+  </text>
 </svg>

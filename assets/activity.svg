@@ -1,9 +1,14 @@
-<svg width="900" height="220" viewBox="0 0 900 220" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="220" rx="24" fill="#0F172A"/>
-  <rect x="24" y="24" width="852" height="172" rx="16" fill="#111827" stroke="#334155"/>
-  <text x="48" y="64" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="700">Recent Activity</text>
-  <path d="M78 150C124 150 126 98 172 98C218 98 220 150 266 150C312 150 314 102 360 102C406 102 408 150 454 150C500 150 502 92 548 92C594 92 596 150 642 150C688 150 690 112 736 112C782 112 784 150 830 150" stroke="#38BDF8" stroke-width="8" stroke-linecap="round"/>
-  <circle cx="172" cy="98" r="8" fill="#F59E0B"/>
-  <circle cx="360" cy="102" r="8" fill="#34D399"/>
-  <circle cx="548" cy="92" r="8" fill="#A78BFA"/>
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    Placeholder ini akan DIGANTI OTOMATIS oleh workflow
+    .github/workflows/metrics.yml (plugin activity) setelah
+    Action pertama kali berjalan. Tidak perlu diedit manual.
+  -->
+  <rect width="900" height="300" fill="#0f2027" rx="8"/>
+  <text x="450" y="140" text-anchor="middle" font-family="Consolas, monospace" font-size="16" fill="#38bdf8">
+    📈 Recent activity akan muncul di sini
+  </text>
+  <text x="450" y="165" text-anchor="middle" font-family="Consolas, monospace" font-size="12" fill="#8fd9c9" opacity="0.8">
+    Aktifkan workflow "Metrics" di tab Actions untuk membuatnya
+  </text>
 </svg>
