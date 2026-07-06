@@ -1,0 +1,23 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="360" rx="28" fill="#060816"/>
+  <rect x="24" y="24" width="1152" height="312" rx="24" fill="url(#bg)"/>
+  <circle cx="982" cy="98" r="126" fill="#7C3AED" fill-opacity="0.35"/>
+  <circle cx="250" cy="268" r="170" fill="#22D3EE" fill-opacity="0.2"/>
+  <rect x="78" y="94" width="340" height="166" rx="22" fill="#0F172A" stroke="#38BDF8" stroke-opacity="0.45"/>
+  <path d="M122 228L174 170L219 205L271 143L317 185" stroke="#22D3EE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="174" cy="170" r="10" fill="#F8FAFC"/>
+  <circle cx="219" cy="205" r="10" fill="#F8FAFC"/>
+  <circle cx="271" cy="143" r="10" fill="#F8FAFC"/>
+  <circle cx="317" cy="185" r="10" fill="#F8FAFC"/>
+  <text x="478" y="150" fill="#F8FAFC" font-family="Segoe UI, Arial, sans-serif" font-size="48" font-weight="700">MCPEServer</text>
+  <text x="478" y="198" fill="#C7D2FE" font-family="Segoe UI, Arial, sans-serif" font-size="24">Live GitHub Profile Dashboard</text>
+  <text x="478" y="242" fill="#94A3B8" font-family="Segoe UI, Arial, sans-serif" font-size="20">Minecraft • Open Source • Web Developer • UI Design</text>
+  <rect x="478" y="264" width="160" height="44" rx="22" fill="#38BDF8" fill-opacity="0.2" stroke="#38BDF8"/>
+  <text x="516" y="292" fill="#38BDF8" font-family="Segoe UI, Arial, sans-serif" font-size="18" font-weight="600">Explore</text>
+  <defs>
+    <linearGradient id="bg" x1="98" y1="22" x2="1077" y2="338" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111827"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+  </defs>
+</svg>
