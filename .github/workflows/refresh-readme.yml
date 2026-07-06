@@ -1,0 +1,31 @@
+name: Refresh README
+
+on:
+  schedule:
+    - cron: '0 7 * * *' # Jalankan setiap pagi pukul 07:00 UTC
+  workflow_dispatch: {}
+
+jobs:
+  refresh-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Git user
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create refresh marker
+        run: |
+          echo "README refreshed at $(date -u '+%Y-%m-%d %H:%M:%S UTC')" > .github/readme-refresh.timestamp
+          git add .github/readme-refresh.timestamp
+          git commit --quiet --allow-empty -m "chore: refresh README metadata" || echo "No changes to commit"
+
+      - name: Push refresh marker
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: refresh README"
+          branch: ${{ github.ref_name }}
+          file_pattern: ".github/readme-refresh.timestamp"
