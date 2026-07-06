@@ -2,7 +2,7 @@ name: Refresh README
 
 on:
   schedule:
-    - cron: '0 7 * * *' # Jalankan setiap pagi pukul 07:00 UTC
+    - cron: "0 7 * * *" # Jalankan setiap pagi pukul 07:00 UTC
   workflow_dispatch: {}
 
 jobs:

@@ -23,6 +23,7 @@
 </p>
 
 <!-- Table of contents yang memudahkan navigasi README panjang. -->
+
 ## Daftar Isi
 
 - [Tentang Saya](#tentang-saya)
@@ -45,6 +46,7 @@
 ## Tentang Saya
 
 <!-- Section ini dapat diupdate untuk menyesuaikan informasi personal atau profesional. -->
+
 Saya adalah pengembang dan desainer yang fokus membangun pengalaman digital modern untuk komunitas Minecraft, web, dan open source.
 
 - 🎮 Spesialis Minecraft Bedrock: plugin, addon, dan tooling untuk pengembang Bedrock Edition.
@@ -151,20 +153,20 @@ Membuat tools dan dashboard yang membantu komunitas pengembang bereksperimen, be
 
 <!-- Tambahkan atau ubah item pada grid ini sesuai teknologi yang digunakan proyek Anda. -->
 
-| Kategori | Teknologi | Keterangan | Status |
-|---|---|---|---|
-| Frontend | React | UI modular dan component-driven | ✅ Terpakai |
-| Frontend | Next.js | Rendering hybrid, SEO, dan API routes | ✅ Terpakai |
-| Styling | Tailwind CSS | Utility-first CSS untuk UI cepat | ✅ Terpakai |
-| Backend | Node.js | Server, CLI, dan tooling API | ✅ Terpakai |
-| Backend | Express | Routing API ringan dan middleware | ⚙️ Aktif |
-| Backend | Prisma | ORM TypeScript untuk database | ⚙️ Evaluasi |
-| DB | PostgreSQL | Basis data utama untuk data production | ⚙️ Evaluasi |
-| DevOps | GitHub Actions | CI/CD dan README refresh | ✅ Terpakai |
-| Infrastruktur | Docker | Containerization untuk lingkungan dev | ⚙️ Aktif |
-| Testing | Vitest | Unit & integration tests | ⚙️ Aktif |
-| Testing | Playwright | E2E tests UI / browser | ⚙️ Rencana |
-| Monitoring | Sentry | Error tracking dan observability | ⚙️ Rencana |
+| Kategori      | Teknologi      | Keterangan                             | Status      |
+| ------------- | -------------- | -------------------------------------- | ----------- |
+| Frontend      | React          | UI modular dan component-driven        | ✅ Terpakai |
+| Frontend      | Next.js        | Rendering hybrid, SEO, dan API routes  | ✅ Terpakai |
+| Styling       | Tailwind CSS   | Utility-first CSS untuk UI cepat       | ✅ Terpakai |
+| Backend       | Node.js        | Server, CLI, dan tooling API           | ✅ Terpakai |
+| Backend       | Express        | Routing API ringan dan middleware      | ⚙️ Aktif    |
+| Backend       | Prisma         | ORM TypeScript untuk database          | ⚙️ Evaluasi |
+| DB            | PostgreSQL     | Basis data utama untuk data production | ⚙️ Evaluasi |
+| DevOps        | GitHub Actions | CI/CD dan README refresh               | ✅ Terpakai |
+| Infrastruktur | Docker         | Containerization untuk lingkungan dev  | ⚙️ Aktif    |
+| Testing       | Vitest         | Unit & integration tests               | ⚙️ Aktif    |
+| Testing       | Playwright     | E2E tests UI / browser                 | ⚙️ Rencana  |
+| Monitoring    | Sentry         | Error tracking dan observability       | ⚙️ Rencana  |
 
 ### Teknologi Pendukung
 
@@ -405,7 +407,7 @@ name: Refresh README
 
 on:
   schedule:
-    - cron: '0 7 * * *' # Jalankan setiap pagi pukul 07:00 UTC
+    - cron: "0 7 * * *" # Jalankan setiap pagi pukul 07:00 UTC
   workflow_dispatch: {}
 
 jobs:
@@ -500,15 +502,19 @@ jobs:
 ## FAQ Singkat
 
 ### Bagaimana cara mengganti hero banner?
+
 Ganti parameter URL `capsule-render.vercel.app/api` dengan teks, warna, atau tipe render lain.
 
 ### Bagaimana cara menambahkan proyek baru?
+
 Tambahkan item baru di bagian `Proyek Unggulan` dan sertakan link atau screenshot bila tersedia.
 
 ### Bagaimana cara mempublikasikan workflow GitHub Actions?
+
 Simpan workflow di `.github/workflows/refresh-readme.yml`, lalu push ke repository.
 
 ### Apakah file ini harus tetap panjang?
+
 Tidak wajib, tetapi README panjang dengan struktur jelas membantu audiens memahami roadmap dan setup lebih cepat.
 
 ---
